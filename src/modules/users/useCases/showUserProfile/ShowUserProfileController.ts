@@ -15,7 +15,7 @@ class ShowUserProfileController {
   
       return response.status(200).json(user);
     }catch (err) {
-      return response.status(404).json({error: err});
+      return response.status(404).json({error: err.message});
     }
   }
 }
